@@ -4,7 +4,7 @@ dist/
 build/
 out/
 hostinger-deploy/
-*.zip
+hostinger-wovenwarp-static.zip
 .vercel/
 .env
 coverage/
