@@ -13,7 +13,7 @@ const PROJECTS = [
     type: 'Residential',
     location: 'Milan, Italy',
     description: 'Contemporary 4-bedroom residence featuring Wovenwarp\'s Minimal Neutral collection anchoring the living room with subtle sophistication.',
-    image: '/images/lifestyle-living-room-01.png',
+    image: '/images/lifestyle-living-room-01.webp',
     featured: true,
   },
   {
@@ -22,7 +22,7 @@ const PROJECTS = [
     type: 'Hospitality',
     location: 'Kyoto, Japan',
     description: 'Luxury 12-room boutique hotel where Wovenwarp\'s Contemporary Collection creates warm focal points in each guest suite.',
-    image: '/images/editorial-heritage-v1.png',
+    image: '/images/editorial-heritage-v1.webp',
     featured: true,
   },
   {
@@ -31,7 +31,7 @@ const PROJECTS = [
     type: 'Residential',
     location: 'Marrakech, Morocco',
     description: 'Architect-designed villa with Persian Heritage collection defining the central courtyard lounge in authentic luxury.',
-    image: '/images/rug-texture-v1.png',
+    image: '/images/rug-texture-v1.webp',
     featured: false,
   },
   {
@@ -40,7 +40,7 @@ const PROJECTS = [
     type: 'Commercial',
     location: 'Tokyo, Japan',
     description: 'Modern office lobby design with curated Handwoven Artisan collection creating a welcoming luxury entrance experience.',
-    image: '/images/studio-moodboard-sampling-01.png',
+    image: '/images/studio-moodboard-sampling-01.webp',
     featured: false,
   },
   {
@@ -49,7 +49,7 @@ const PROJECTS = [
     type: 'Residential',
     location: 'London, UK',
     description: 'Historic Georgian residence reimagined with modern interiors, featuring Luxury Wool collection in the drawing room.',
-    image: '/images/craft-handknotting-01.png',
+    image: '/images/craft-handknotting-01.webp',
     featured: false,
   },
   {
@@ -58,7 +58,7 @@ const PROJECTS = [
     type: 'Hospitality',
     location: 'Barcelona, Spain',
     description: 'Serene 8-room spa facility where Designer Collaboration collection creates calming tactile spaces for guests.',
-    image: '/images/material-yarn-bundles-01.png',
+    image: '/images/material-yarn-bundles-01.webp',
     featured: false,
   },
 ];

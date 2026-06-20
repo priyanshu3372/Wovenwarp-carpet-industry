@@ -12,19 +12,19 @@ const NATURAL_PILLARS = [
     icon: Leaf,
     title: 'Pure Natural Fibers',
     description: 'Organic wool, natural silk, and plant-based dyes create rugs that age beautifully, breathe naturally, and feel luxuriously soft underfoot.',
-    image: '/images/material-yarn-bundles-01.png',
+    image: '/images/material-yarn-bundles-01.webp',
   },
   {
     icon: Heart,
     title: 'Ethical Craftsmanship',
     description: 'Every rug supports artisan communities with fair wages and safe working conditions, preserving weaving heritage for generations.',
-    image: '/images/craft-handknotting-01.png',
+    image: '/images/craft-handknotting-01.webp',
   },
   {
     icon: Droplets,
     title: 'Minimal Environmental Impact',
     description: 'Sustainable production practices, water conservation, and eco-conscious dyes ensure our rugs honor the environment.',
-    image: '/images/rug-texture-v1.png',
+    image: '/images/rug-texture-v1.webp',
   },
 ];
 
@@ -125,7 +125,7 @@ export default function NaturalSustainableSection() {
           >
             <div data-parallax className="absolute inset-[-6%]">
               <Image
-                src="/images/rug-texture-v1.png"
+                src="/images/rug-texture-v1.webp"
                 alt="Close-up of natural handwoven rug texture and fibers"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"

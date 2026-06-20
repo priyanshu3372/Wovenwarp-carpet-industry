@@ -7,7 +7,7 @@ export default function SiteBackdrop() {
     <div aria-hidden className="fixed inset-0 -z-10 overflow-hidden bg-ink-950">
       <div className="absolute inset-0 scale-[1.06]">
         <Image
-          src="/images/hero-bg.png"
+          src="/images/hero-bg.webp"
           alt=""
           fill
           sizes="100vw"

@@ -118,7 +118,7 @@ export default function Hero() {
           transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
         >
           <Image
-            src="/images/hero-bg.png"
+            src="/images/hero-bg.webp"
             alt="Handwoven rugs draped through a warm arched Mediterranean interior"
             fill
             priority

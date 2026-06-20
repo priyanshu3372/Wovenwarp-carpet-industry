@@ -114,9 +114,8 @@ export default function BehanceGalleryGrid() {
     setError(null);
 
     try {
-      const response = await fetch('/api/behance/gallery', {
+      const response = await fetch('/data/behance-gallery.json', {
         headers: { Accept: 'application/json' },
-        cache: 'no-store',
       });
 
       if (!response.ok) {

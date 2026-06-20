@@ -13,7 +13,7 @@ const FIBER_SPECS = [
     durability: 'Excellent',
     maintenance: 'Minimal',
     description: 'Premium natural wool with inherent stain resistance and natural elasticity for longevity.',
-    image: '/images/rug-texture-v1.png',
+    image: '/images/rug-texture-v1.webp',
   },
   {
     fiber: 'Silk Blend',
@@ -21,7 +21,7 @@ const FIBER_SPECS = [
     durability: 'Very High',
     maintenance: 'Low',
     description: 'Luxury silk combined with wool creates luminous texture and extraordinary softness.',
-    image: '/images/material-yarn-bundles-01.png',
+    image: '/images/material-yarn-bundles-01.webp',
   },
   {
     fiber: 'Cotton',
@@ -29,7 +29,7 @@ const FIBER_SPECS = [
     durability: 'Very High',
     maintenance: 'Easy',
     description: 'Organic cotton perfect for warm climates—breathable, washable, and naturally resilient.',
-    image: '/images/studio-moodboard-sampling-01.png',
+    image: '/images/studio-moodboard-sampling-01.webp',
   },
 ];
 

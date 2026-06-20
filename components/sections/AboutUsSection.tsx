@@ -105,7 +105,7 @@ export default function AboutUsSection() {
               playsInline
               preload="auto"
               crossOrigin="anonymous"
-              poster="/images/hero-bg.png"
+              poster="/images/hero-bg.webp"
             >
               <source
                 src="/video/WhatsApp Video 2026-06-03 at 1.19.40 PM.mp4"

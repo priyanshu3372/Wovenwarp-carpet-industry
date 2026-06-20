@@ -12,7 +12,7 @@ const CRAFT_STAGES = [
     kicker: 'Loom Blueprinting',
     description: 'Each masterpiece begins with architectural commission blueprints. Master designers translate contemporary layouts into row-by-row color charts (talim) for the looms, mapping every single knot coordinate.',
     sop: 'Designer logs specifications into the registry workspace, generating a unique serialized Ledger ID to track the carpet\'s lifecycle.',
-    image: '/images/studio-moodboard-sampling-01.png',
+    image: '/images/studio-moodboard-sampling-01.webp',
   },
   {
     stage: '02',
@@ -20,7 +20,7 @@ const CRAFT_STAGES = [
     kicker: 'The Loom Setup',
     description: 'Weaving starts by tensioning the warp threads on traditional wooden upright looms. Master weavers work in pairs or trios, reading the talim and hand-knotting row by row using organic wool and silk yarn.',
     sop: 'Looms are audited daily for warp tension and knot consistency by floor managers to enforce quality standards.',
-    image: '/images/craft-handknotting-01.png',
+    image: '/images/craft-handknotting-01.webp',
   },
   {
     stage: '03',
@@ -28,7 +28,7 @@ const CRAFT_STAGES = [
     kicker: 'Zero Synthetic Compromise',
     description: 'Every square inch contains up to 250 individual knots. Weavers maintain uniform tension across months of work, resulting in maximum density and unparalleled textural durability.',
     sop: 'Weavers inspect yarn lots to ensure absolute dye consistency. No synthetic fibers or shortcuts are permitted on the loom floor.',
-    image: '/images/material-yarn-bundles-01.png',
+    image: '/images/material-yarn-bundles-01.webp',
   },
   {
     stage: '04',
@@ -36,7 +36,7 @@ const CRAFT_STAGES = [
     kicker: 'Secure Hardware Integration',
     description: 'During finishing, an anti-tamper NFC/QR tag is embedded directly into the carpet\'s foundation. Weavers cross-stitch a premium velvet corner label over it, making the tag completely invisible yet easily scannable.',
     sop: 'Weaver affixes tag directly to warp base at the inner corner (Step 3.1), secures it with a tight wool cross-stitch cover (Step 3.2), and registers the hardware ID (Step 3.3).',
-    image: '/images/editorial-heritage-v1.png',
+    image: '/images/editorial-heritage-v1.webp',
   },
   {
     stage: '05',
@@ -44,7 +44,7 @@ const CRAFT_STAGES = [
     kicker: 'The Living Ledger Registry',
     description: 'A digital ledger entry is generated for the piece. The record captures raw weaving hours, knot density, material certifications, and the names/portraits of the weavers who crafted it.',
     sop: 'Quality Control runs the dual-stage scan: Stage 1 records current transit location; Stage 2 maps invoice codes to cryptographically secure the record.',
-    image: '/images/rug-texture-v1.png',
+    image: '/images/rug-texture-v1.webp',
   },
   {
     stage: '06',
@@ -52,7 +52,7 @@ const CRAFT_STAGES = [
     kicker: 'Provenance Handover',
     description: 'The collector receives their masterwork and scans the hidden label. Entering their verification key locks the chronological provenance chain, claiming ownership and activating the Living Ledger certificate.',
     sop: 'Sales team verifies invoice completion, unlocking Stage 2 access. The collector\'s scan mints the active registry, linking weaver and collector forever.',
-    image: '/images/cutout-rolled-rug-01.png',
+    image: '/images/cutout-rolled-rug-01.webp',
   },
 ];
 

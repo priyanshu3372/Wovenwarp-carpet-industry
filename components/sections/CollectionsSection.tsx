@@ -17,13 +17,13 @@ const COLLECTIONS = [
     id: 'modern',
     name: 'Modern Rugs',
     description: 'Minimal palettes meet sculptural texture in designs for modern living.',
-    image: '/images/modern-rug-01.png',
+    image: '/images/modern-rug-01.webp',
     galleryImages: [
-      '/images/modern-rug-01.png',
-      '/images/modern-rug-02.png',
-      '/images/modern-rug-03.png',
-      '/images/modern-rug-04.png',
-      '/images/modern-rug-05.png',
+      '/images/modern-rug-01.webp',
+      '/images/modern-rug-02.webp',
+      '/images/modern-rug-03.webp',
+      '/images/modern-rug-04.webp',
+      '/images/modern-rug-05.webp',
     ],
     featured: true,
   },
@@ -31,13 +31,13 @@ const COLLECTIONS = [
     id: 'contemporary',
     name: 'Contemporary Rugs',
     description: 'Time-honored patterns reimagined through a contemporary lens.',
-    image: '/images/contemporary-rug-01.png',
+    image: '/images/contemporary-rug-01.webp',
     galleryImages: [
-      '/images/contemporary-rug-01.png',
-      '/images/contemporary-rug-02.png',
-      '/images/contemporary-rug-03.png',
-      '/images/contemporary-rug-04.png',
-      '/images/contemporary-rug-05.png',
+      '/images/contemporary-rug-01.webp',
+      '/images/contemporary-rug-02.webp',
+      '/images/contemporary-rug-03.webp',
+      '/images/contemporary-rug-04.webp',
+      '/images/contemporary-rug-05.webp',
     ],
     featured: false,
   },
@@ -45,13 +45,13 @@ const COLLECTIONS = [
     id: 'persian',
     name: 'Persian Rugs',
     description: 'Premium natural wool with hand-finished details and timeless elegance.',
-    image: '/images/persian-rug-01.png',
+    image: '/images/persian-rug-01.webp',
     galleryImages: [
-      '/images/persian-rug-01.png',
-      '/images/persian-rug-02.png',
-      '/images/persian-rug-03.png',
-      '/images/persian-rug-04.png',
-      '/images/persian-rug-05.png',
+      '/images/persian-rug-01.webp',
+      '/images/persian-rug-02.webp',
+      '/images/persian-rug-03.webp',
+      '/images/persian-rug-04.webp',
+      '/images/persian-rug-05.webp',
     ],
     featured: false,
   },
@@ -59,13 +59,13 @@ const COLLECTIONS = [
     id: 'vintage',
     name: 'Vintage Rugs',
     description: 'Quiet sophistication through restrained color and textural depth.',
-    image: '/images/vintage-rug-01.png',
+    image: '/images/vintage-rug-01.webp',
     galleryImages: [
-      '/images/vintage-rug-01.png',
-      '/images/vintage-rug-02.png',
-      '/images/vintage-rug-03.png',
-      '/images/vintage-rug-04.png',
-      '/images/vintage-rug-05.png',
+      '/images/vintage-rug-01.webp',
+      '/images/vintage-rug-02.webp',
+      '/images/vintage-rug-03.webp',
+      '/images/vintage-rug-04.webp',
+      '/images/vintage-rug-05.webp',
     ],
     featured: false,
   },
@@ -73,13 +73,13 @@ const COLLECTIONS = [
     id: 'transitional',
     name: 'Transitional Rugs',
     description: 'Exclusively handcrafted with visible artisan techniques and character.',
-    image: '/images/transitional-rug-01.png',
+    image: '/images/transitional-rug-01.webp',
     galleryImages: [
-      '/images/transitional-rug-01.png',
-      '/images/transitional-rug-02.png',
-      '/images/transitional-rug-03.png',
-      '/images/transitional-rug-04.png',
-      '/images/transitional-rug-05.png',
+      '/images/transitional-rug-01.webp',
+      '/images/transitional-rug-02.webp',
+      '/images/transitional-rug-03.webp',
+      '/images/transitional-rug-04.webp',
+      '/images/transitional-rug-05.webp',
     ],
     featured: false,
   },
@@ -87,13 +87,13 @@ const COLLECTIONS = [
     id: 'floral',
     name: 'Floral Rugs',
     description: 'Curated partnerships with interior architects and design studios.',
-    image: '/images/floral-rug-01.png',
+    image: '/images/floral-rug-01.webp',
     galleryImages: [
-      '/images/floral-rug-01.png',
-      '/images/floral-rug-02.png',
-      '/images/floral-rug-03.png',
-      '/images/floral-rug-04.png',
-      '/images/floral-rug-05.png',
+      '/images/floral-rug-01.webp',
+      '/images/floral-rug-02.webp',
+      '/images/floral-rug-03.webp',
+      '/images/floral-rug-04.webp',
+      '/images/floral-rug-05.webp',
     ],
     featured: false,
   },
@@ -216,7 +216,7 @@ export default function CollectionsSection() {
               className="relative min-h-[240px] sm:min-h-[300px] lg:min-h-[320px] overflow-hidden rounded-sm border border-bone/10 lg:col-span-6"
             >
               <Image
-                src="/images/lifestyle-living-room-01.png"
+                src="/images/lifestyle-living-room-01.webp"
                 alt="Luxury interior featuring handwoven Wovenwarp rug in modern space"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
@@ -296,7 +296,7 @@ export default function CollectionsSection() {
             </div>
             <div className="lg:col-span-6 relative min-h-[220px] sm:min-h-[260px] lg:min-h-[300px] overflow-hidden rounded-sm border border-bone/10">
               <Image
-                src="/images/studio-moodboard-sampling-01.png"
+                src="/images/studio-moodboard-sampling-01.webp"
                 alt="Custom rug design consultation and material sampling"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"

@@ -29,17 +29,17 @@ const MATERIALS = [
   {
     name: 'Premium Wool',
     description: 'Hand-carded natural wool from sustainable farms, soft, durable, and naturally stain-resistant.',
-    image: '/images/material-yarn-bundles-01.png',
+    image: '/images/material-yarn-bundles-01.webp',
   },
   {
     name: 'Organic Cotton',
     description: 'Sustainably grown cotton without synthetic pesticides, breathable and perfect for warm climates.',
-    image: '/images/rug-texture-v1.png',
+    image: '/images/rug-texture-v1.webp',
   },
   {
     name: 'Silk & Natural Dyes',
     description: 'Hand-dyed with natural madder, indigo, and organic plant pigments for timeless, fade-resistant colors.',
-    image: '/images/studio-moodboard-sampling-01.png',
+    image: '/images/studio-moodboard-sampling-01.webp',
   },
 ];
 
@@ -118,7 +118,7 @@ export default function SustainabilitySection() {
           >
             <div data-parallax className="absolute inset-[-6%]">
               <Image
-                src="/images/lifestyle-living-room-01.png"
+                src="/images/lifestyle-living-room-01.webp"
                 alt="Sustainable natural fibers and organic materials"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
@@ -191,7 +191,7 @@ export default function SustainabilitySection() {
             >
               <div data-parallax className="absolute inset-[-5%]">
                 <Image
-                  src="/images/craft-handknotting-01.png"
+                  src="/images/craft-handknotting-01.webp"
                   alt="Artisan community weaving sustainable rugs"
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"

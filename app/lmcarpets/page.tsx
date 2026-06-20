@@ -20,7 +20,7 @@ const HISTORIC_COMMISSIONS = [
     weavers: 'Rampyare Yadav & 3 Master Apprentices',
     description: 'Commissioned for the State Assembly Chamber. A dense hand-knotted masterpiece utilizing geometric floral motifs. The piece required 180 days of continuous loom labor and represents the first major institutional project of the Bhadohi workshop.',
     status: 'Lost to Private Records (No Digital Trace)',
-    image: '/images/craft-handknotting-01.png',
+    image: '/images/craft-handknotting-01.webp',
   },
   {
     id: 'comm-1995',
@@ -32,7 +32,7 @@ const HISTORIC_COMMISSIONS = [
     weavers: 'Yadav Family Looms',
     description: 'Designed for a renovated royal estate reception hall. Features heavy distress washing to highlight the organic variations of the hand-carded sheep wool. Traded through intermediate export agencies.',
     status: 'Ownership Chain Unmapped (Historical Records Only)',
-    image: '/images/editorial-heritage-v1.png',
+    image: '/images/editorial-heritage-v1.webp',
   },
   {
     id: 'comm-2008',
@@ -44,7 +44,7 @@ const HISTORIC_COMMISSIONS = [
     weavers: 'Lalmani Yadav & Lead Weavers',
     description: 'A custom sculptural architectural rug featuring layered borders. Exported during the second-generation expansion. Represented our first integration of fine mulberry silk highlighting raised textures.',
     status: 'In Private Collection (Location Unknown)',
-    image: '/images/lifestyle-living-room-01.png',
+    image: '/images/lifestyle-living-room-01.webp',
   },
 ];
 
@@ -160,7 +160,7 @@ export default function HeritageArchivePage() {
             
             <div className="lg:col-span-5 relative h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden border border-[#efe6d8]/10 rounded-sm">
               <Image
-                src="/images/material-yarn-bundles-01.png"
+                src="/images/material-yarn-bundles-01.webp"
                 alt="Yarn bundles representing natural dyes"
                 fill
                 className="object-cover"

@@ -65,14 +65,14 @@ const CUSTOM_PROJECTS = [
     title: 'Minimalist Milano Penthouse',
     type: 'Residential',
     description: '8x10 custom wool rug in warm beige with subtle geometric border. Designed to anchor the living room\'s modern minimalism.',
-    image: '/images/lifestyle-living-room-01.png',
+    image: '/images/lifestyle-living-room-01.webp',
   },
   {
     id: 2,
     title: 'Luxury Boutique Hotel Lobby',
     type: 'Hospitality',
     description: 'Custom 12x16 handwoven rug featuring subtle pattern inspired by Japanese textile design. Creates serene luxury entrance.',
-    image: '/images/studio-moodboard-sampling-01.png',
+    image: '/images/studio-moodboard-sampling-01.webp',
   },
 ];
 
@@ -188,7 +188,7 @@ export default function CustomRugsSection() {
           >
             <div data-parallax className="absolute inset-[-6%]">
               <Image
-                src="/images/studio-moodboard-sampling-01.png"
+                src="/images/studio-moodboard-sampling-01.webp"
                 alt="Custom rug design consultation with luxury interior styling"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"

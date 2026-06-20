@@ -48,7 +48,7 @@ export default function LuxuryLoader() {
               className="relative h-[260px] w-[390px] md:h-[320px] md:w-[480px] select-none"
             >
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="Wovenwarp — Woven Into Legacy"
                 fill
                 priority

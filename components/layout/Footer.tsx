@@ -122,7 +122,7 @@ export default function Footer() {
               <span
                 className="logo-symbol h-12 w-12 sm:h-14 sm:w-14 shrink-0 transition-transform duration-700 group-hover:scale-[1.04]"
                 style={{
-                  backgroundImage: "url('/images/logo.png')",
+                  backgroundImage: "url('/images/logo.webp')",
                   backgroundSize: '230% auto',
                   backgroundPosition: 'center 13%',
                   backgroundRepeat: 'no-repeat',

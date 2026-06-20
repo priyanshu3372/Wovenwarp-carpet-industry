@@ -11,22 +11,22 @@ const BEHANCE_PROJECTS = [
   {
     title: 'Interior Stories',
     category: 'Rug Styling',
-    image: '/images/lifestyle-living-room-01.png',
+    image: '/images/lifestyle-living-room-01.webp',
   },
   {
     title: 'Heritage Motifs',
     category: 'Design Language',
-    image: '/images/editorial-heritage-v1.png',
+    image: '/images/editorial-heritage-v1.webp',
   },
   {
     title: 'Material Studies',
     category: 'Wool & Yarn',
-    image: '/images/material-yarn-bundles-01.png',
+    image: '/images/material-yarn-bundles-01.webp',
   },
   {
     title: 'Craft Details',
     category: 'Hand Knotting',
-    image: '/images/craft-handknotting-01.png',
+    image: '/images/craft-handknotting-01.webp',
   },
 ];
 

@@ -135,7 +135,7 @@ export default function Navbar() {
               <div
                 className="logo-symbol relative h-9 w-9 shrink-0 transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.06] sm:h-12 sm:w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
                 style={{
-                  backgroundImage: "url('/images/logo.png')",
+                  backgroundImage: "url('/images/logo.webp')",
                   backgroundSize: '230% auto',
                   backgroundPosition: 'center 13%',
                   backgroundRepeat: 'no-repeat',
@@ -241,7 +241,7 @@ export default function Navbar() {
                   <div
                     className="logo-symbol h-12 w-12 shrink-0"
                     style={{
-                      backgroundImage: "url('/images/logo.png')",
+                      backgroundImage: "url('/images/logo.webp')",
                       backgroundSize: '230% auto',
                       backgroundPosition: 'center 13%',
                       backgroundRepeat: 'no-repeat',

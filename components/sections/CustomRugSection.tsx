@@ -89,7 +89,7 @@ export default function CustomRugSection() {
                         <div data-reveal className="col-span-12 lg:col-span-6">
                             <div className="relative min-h-[500px] overflow-hidden rounded-sm border border-bone/10 lg:min-h-[700px]">
                                 <Image
-                                    src="/images/studio-moodboard-sampling-01.png"
+                                    src="/images/studio-moodboard-sampling-01.webp"
                                     alt="Luxury bespoke rug material flatlay and design moodboard"
                                     fill
                                     className="object-cover"
@@ -132,7 +132,7 @@ export default function CustomRugSection() {
                         <div data-reveal className="md:col-span-8">
                             <div className="relative min-h-[400px] overflow-hidden rounded-sm border border-bone/10">
                                 <Image
-                                    src="/images/craft-handknotting-01.png"
+                                    src="/images/craft-handknotting-01.webp"
                                     alt="Artisan hands working on a custom weave"
                                     fill
                                     className="object-cover"

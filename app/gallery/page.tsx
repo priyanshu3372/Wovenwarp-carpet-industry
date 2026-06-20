@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: '/gallery',
     images: [
       {
-        url: '/images/lifestyle-living-room-01.png',
+        url: '/images/lifestyle-living-room-01.webp',
         width: 1536,
         height: 1024,
         alt: 'Wovenwarp Behance gallery showcase',

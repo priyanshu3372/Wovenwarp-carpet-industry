@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     'Contemporary handcrafted rugs shaped by timeless weaving traditions, refined textures, and modern design sensibilities.',
   metadataBase: new URL('https://wovenwarp.example'),
   icons: {
-    icon: '/images/logo.png',
-    shortcut: '/images/logo.png',
-    apple: '/images/logo.png',
+    icon: '/images/logo.webp',
+    shortcut: '/images/logo.webp',
+    apple: '/images/logo.webp',
   },
   openGraph: {
     title: 'Wovenwarp - Woven Into Legacy',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/logo.png',
+        url: '/images/logo.webp',
         width: 1536,
         height: 1024,
         alt: 'Wovenwarp - Woven Into Legacy',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: 'Wovenwarp - Woven Into Legacy',
     description:
       'Handwoven rugs, textiles, and timeless spaces. Heritage craftsmanship reimagined for the modern home.',
-    images: ['/images/logo.png'],
+    images: ['/images/logo.webp'],
   },
 };
 

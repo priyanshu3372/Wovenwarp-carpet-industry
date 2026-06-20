@@ -38,7 +38,7 @@ export default function DivisionSection() {
           <div className="w-full max-w-[380px] aspect-square bg-[#fcfaf7] shadow-[0_15px_45px_rgba(61,47,38,0.06)] rounded-sm border border-[#3d2f26]/5 p-8 flex flex-col items-center justify-between">
             <div className="relative w-full aspect-square max-w-[240px] flex items-center justify-center">
               <Image
-                src="/images/lm-carpets-logo.png"
+                src="/images/lm-carpets-logo.webp"
                 alt="L.M. Carpets Logo"
                 fill
                 sizes="(max-width: 768px) 240px, 240px"

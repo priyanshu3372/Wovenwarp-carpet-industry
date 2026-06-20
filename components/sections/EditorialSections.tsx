@@ -229,7 +229,7 @@ export default function EditorialSections() {
           >
             <div data-parallax-image className="absolute inset-[-8%]">
               <Image
-                src="/images/editorial-heritage-v1.png"
+                src="/images/editorial-heritage-v1.webp"
                 alt="Handwoven Wovenwarp rug in a contemporary living space with modern furniture"
                 fill
                 sizes="(min-width: 1024px) 58vw, 100vw"
@@ -272,7 +272,7 @@ export default function EditorialSections() {
               className="relative min-h-[240px] sm:min-h-[300px] lg:min-h-[340px] overflow-hidden rounded-sm border border-bone/10 lg:col-span-6"
             >
               <Image
-                src="/images/lifestyle-living-room-01.png"
+                src="/images/lifestyle-living-room-01.webp"
                 alt="Organic modern living room with a handwoven Wovenwarp rug"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
@@ -295,14 +295,14 @@ export default function EditorialSections() {
                   <Image
                     src={
                       index === 0
-                        ? '/images/lifestyle-living-room-01.png'
+                        ? '/images/lifestyle-living-room-01.webp'
                         : index === 1
-                          ? '/images/material-yarn-bundles-01.png'
+                          ? '/images/material-yarn-bundles-01.webp'
                           : index === 2
-                            ? '/images/rug-texture-v1.png'
+                            ? '/images/rug-texture-v1.webp'
                             : index === 3
-                              ? '/images/craft-handknotting-01.png'
-                              : '/images/studio-moodboard-sampling-01.png'
+                              ? '/images/craft-handknotting-01.webp'
+                              : '/images/studio-moodboard-sampling-01.webp'
                     }
                     alt=""
                     fill
@@ -344,7 +344,7 @@ export default function EditorialSections() {
       >
         <div data-parallax-image className="absolute inset-[-7%]">
           <Image
-            src="/images/craft-handknotting-01.png"
+            src="/images/craft-handknotting-01.webp"
             alt="Artisan hands handknotting a rug at a traditional loom"
             fill
             sizes="100vw"
@@ -385,7 +385,7 @@ export default function EditorialSections() {
           <div data-reveal className="col-span-12 lg:col-span-6">
             <div className="relative mb-6 sm:mb-8 lg:mb-9 min-h-[220px] sm:min-h-[260px] md:min-h-[300px] overflow-hidden rounded-sm border border-bone/10">
               <Image
-                src="/images/rug-texture-v1.png"
+                src="/images/rug-texture-v1.webp"
                 alt="Premium handwoven rug in a contemporary bedroom setting"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
@@ -410,7 +410,7 @@ export default function EditorialSections() {
           <div data-reveal className="col-span-12 lg:col-span-6">
             <div className="relative mb-6 sm:mb-8 lg:mb-9 min-h-[220px] sm:min-h-[260px] md:min-h-[300px] overflow-hidden rounded-sm border border-bone/10">
               <Image
-                src="/images/lifestyle-living-room-01.png"
+                src="/images/lifestyle-living-room-01.webp"
                 alt="Luxury interior showcasing handwoven Wovenwarp rug in a sophisticated living space"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
@@ -459,7 +459,7 @@ export default function EditorialSections() {
             <div className="lg:col-span-5">
               <div className="relative mb-6 sm:mb-8 min-h-[220px] sm:min-h-[260px] md:min-h-[300px] overflow-hidden rounded-sm bg-bone/85">
                 <Image
-                  src="/images/cutout-rolled-rug-01.png"
+                  src="/images/cutout-rolled-rug-01.webp"
                   alt="Rolled handwoven Wovenwarp rug showing fringe, edge finishing, and woven surface"
                   fill
                   sizes="(min-width: 1024px) 40vw, 100vw"

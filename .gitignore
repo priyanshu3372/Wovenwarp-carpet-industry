@@ -10,3 +10,7 @@ hostinger-wovenwarp-static.zip
 coverage/
 *.log
 WOVENWARP-master/
+
+# Behance local cache images
+/public/images/behance/*
+!/public/images/behance/.gitkeep
