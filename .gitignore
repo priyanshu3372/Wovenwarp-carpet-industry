@@ -1,0 +1,12 @@
+node_modules/
+.next/
+dist/
+build/
+out/
+hostinger-deploy/
+hostinger-wovenwarp-static.zip
+.vercel/
+.env
+coverage/
+*.log
+WOVENWARP-master/

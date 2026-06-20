@@ -1,0 +1,37 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lmCarpetsTitle">
+  <title id="lmCarpetsTitle">L.M. Carpets emblem</title>
+  <defs>
+    <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#666" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#383838" stop-opacity="0.9" />
+    </linearGradient>
+    <path id="outerTextPath" d="M 120 400 A 280 280 0 1 1 680 400" />
+  </defs>
+
+  <rect width="800" height="800" fill="#f7f5f0" />
+  <circle cx="400" cy="400" r="380" fill="none" stroke="url(#ringGradient)" stroke-width="32" />
+  <circle cx="400" cy="400" r="280" fill="#d6b98a" />
+
+  <g fill="#4f7a7d" transform="translate(0, -22)">
+    <path d="M325 220 C260 220 230 280 230 340 C230 400 285 425 330 420 C365 415 385 380 420 375 C460 370 490 400 500 430 C520 470 560 470 590 440 C620 415 610 360 590 320 C560 260 510 230 450 225 C420 222 370 215 325 220 Z" />
+    <path d="M335 500 C300 520 295 565 320 590 C345 615 390 610 420 585 C450 560 485 570 505 600 C525 630 570 640 605 620 C640 600 650 560 635 525 C620 490 590 470 560 470 C520 470 470 500 435 515 C400 530 375 530 335 500 Z" />
+    <path d="M180 470 C150 505 150 560 185 590 C220 620 285 620 310 590 C340 550 330 500 310 470 C285 430 220 430 180 470 Z" />
+  </g>
+
+  <g stroke="#fff" stroke-width="18" fill="none" stroke-linecap="round">
+    <path d="M220 350 C260 300 330 310 360 360 C390 410 450 430 520 420" />
+    <path d="M270 470 C320 430 390 430 460 450 C520 470 580 440 630 390" />
+    <path d="M160 470 C210 430 250 420 320 415 C390 410 430 470 490 500 C540 520 620 530 670 480" />
+  </g>
+
+  <g fill="#c05424" font-family="Georgia, serif" font-weight="700" text-anchor="middle">
+    <text x="400" y="190" font-size="96">L.M.</text>
+  </g>
+  <g fill="#4f7a7d" font-family="Georgia, serif" font-weight="700" text-anchor="middle">
+    <text x="400" y="375" font-size="56">WEAVING THE WORLD</text>
+    <text x="400" y="430" font-size="56">TOGETHER</text>
+  </g>
+  <g fill="#446f35" font-family="Arial, sans-serif" font-weight="800" text-anchor="middle">
+    <text x="400" y="570" font-size="92">CARPETS</text>
+  </g>
+</svg>

@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0706;
+  --bg-soft: #120d0a;
+  --bone: #efe6d8;
+  --bone-soft: #d8cdbc;
+  --clay: #c08e60;
+  --ember: #b8501c;
+  --gold: #cba85a;
+  --char: #1b1411;
+  --cursor-x: 50%;
+  --cursor-y: 50%;
+  --font-playfair: 'Playfair Display', serif;
+  --font-cormorant: 'Cormorant Garamond', serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--bone);
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+::selection {
+  background: rgba(184, 80, 28, 0.5);
+  color: var(--bone);
+}
+
+/* hide default cursor when our custom light is over interactive zones (optional) */
+html,
+body {
+  cursor: auto;
+}
+
+/* Editorial text reveal mask */
+.reveal-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  line-height: 1.05;
+  padding-bottom: 0.08em;
+}
+
+.reveal-mask>span {
+  display: inline-block;
+  will-change: transform;
+  transform: translateY(120%);
+}
+
+.silk-underline {
+  background-image: linear-gradient(90deg, transparent, rgba(239, 230, 216, 0.85), transparent);
+  background-size: 200% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 100%;
+  }
+
+  100% {
+    background-position: 200% 100%;
+  }
+}
+
+/* Cursor reactive radial light */
+.cursor-light::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(420px circle at var(--cursor-x) var(--cursor-y),
+      rgba(217, 152, 80, 0.10),
+      rgba(184, 80, 28, 0.04) 35%,
+      transparent 70%);
+  mix-blend-mode: screen;
+  transition: opacity 600ms ease;
+  z-index: 5;
+}
+
+/* Grain layer */
+.grain-overlay {
+  position: absolute;
+  inset: -50%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  opacity: 0.10;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 6;
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 120% 90% at 55% 45%, transparent 45%, rgba(10, 7, 6, 0.35) 80%, rgba(10, 7, 6, 0.7) 100%),
+    linear-gradient(180deg, rgba(10, 7, 6, 0.35) 0%, transparent 22%, transparent 78%, rgba(10, 7, 6, 0.5) 100%);
+  z-index: 4;
+}
+
+/* Magnetic + silk button effect */
+.btn-silk {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn-silk::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 30%, rgba(239, 230, 216, 0.18) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 0;
+}
+
+.btn-silk:hover::before {
+  transform: translateX(120%);
+}
+
+.btn-silk-primary {
+  background: linear-gradient(180deg, #b8501c 0%, #923c12 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 220, 180, 0.25),
+    0 14px 40px -18px rgba(184, 80, 28, 0.85),
+    0 0 0 1px rgba(239, 230, 216, 0.06);
+}
+
+.btn-silk-primary:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 220, 180, 0.35),
+    0 22px 60px -18px rgba(217, 106, 44, 0.95),
+    0 0 0 1px rgba(239, 230, 216, 0.12);
+}
+
+.btn-ghost {
+  background: rgba(20, 14, 11, 0.35);
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+  border: 1px solid rgba(239, 230, 216, 0.18);
+}
+
+.btn-ghost:hover {
+  border-color: rgba(239, 230, 216, 0.42);
+  background: rgba(40, 26, 18, 0.45);
+}
+
+/* Heritage seal */
+.seal-ring {
+  background: conic-gradient(from 0deg, rgba(203, 168, 90, 0.15), rgba(203, 168, 90, 0.6), rgba(203, 168, 90, 0.15), rgba(203, 168, 90, 0.6), rgba(203, 168, 90, 0.15));
+  -webkit-mask: radial-gradient(circle, transparent 62%, black 63%);
+  mask: radial-gradient(circle, transparent 62%, black 63%);
+}
+
+/* Hairline divider */
+.hairline {
+  background: linear-gradient(90deg, transparent, rgba(239, 230, 216, 0.35), transparent);
+}
+
+/* Floating dust particle */
+.dust {
+  position: absolute;
+  border-radius: 9999px;
+  background: rgba(239, 230, 216, 0.55);
+  filter: blur(0.5px);
+  box-shadow: 0 0 12px rgba(239, 230, 216, 0.35);
+  pointer-events: none;
+}
+
+.glass-nav {
+  background: linear-gradient(180deg, rgba(10, 7, 6, 0.42) 0%, rgba(10, 7, 6, 0.18) 100%);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border-bottom: 1px solid rgba(239, 230, 216, 0.08);
+}
+
+.glass-nav.scrolled {
+  background: linear-gradient(180deg, rgba(10, 7, 6, 0.78) 0%, rgba(10, 7, 6, 0.55) 100%);
+  border-bottom-color: rgba(239, 230, 216, 0.14);
+}
+
+@media (max-width: 640px) {
+  .glass-nav {
+    background: linear-gradient(180deg, rgba(10, 7, 6, 0.92) 0%, rgba(10, 7, 6, 0.78) 100%);
+    backdrop-filter: blur(18px) saturate(145%);
+    -webkit-backdrop-filter: blur(18px) saturate(145%);
+  }
+
+  .cursor-light::before {
+    opacity: 0.45;
+  }
+
+  .reveal-mask {
+    line-height: 1.1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Nav link underline */
+.nav-link {
+  position: relative;
+  letter-spacing: 0.14em;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: rgba(239, 230, 216, 0.85);
+  transform: translateX(-50%);
+  transition: width 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Loader bars */
+.loader-bar {
+  transform-origin: top;
+}
+
+/* Subtle moving inner shadow on bg image */
+.cinematic-bg {
+  filter: contrast(1.05) saturate(1.08);
+}
+
+/* ——— Logo flourish ——— */
+
+/* Frameless symbol: radial feather mask so the cream ground of the source PNG
+   fades into the navbar instead of reading as a rectangle.
+   Drop-shadow gives the colored threads a subtle gold lift. */
+.logo-symbol {
+  -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%,
+      #000 38%,
+      rgba(0, 0, 0, 0.65) 58%,
+      transparent 82%);
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 50%,
+      #000 38%,
+      rgba(0, 0, 0, 0.65) 58%,
+      transparent 82%);
+  filter:
+    drop-shadow(0 0 12px rgba(230, 199, 137, 0.25)) drop-shadow(0 4px 14px rgba(184, 80, 28, 0.2)) saturate(1.15) contrast(1.08);
+}
+
+/* Gold shimmer running across the wordmark */
+.wordmark-shimmer {
+  background-image: linear-gradient(100deg,
+      #efe6d8 0%,
+      #efe6d8 35%,
+      #fff4d6 48%,
+      #ffd98a 52%,
+      #efe6d8 65%,
+      #efe6d8 100%);
+  background-size: 220% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: wordmark-shine 6s linear infinite;
+}
+
+.wordmark-shimmer-gold {
+  background-image: linear-gradient(100deg,
+      #cba85a 0%,
+      #cba85a 35%,
+      #fff4d6 48%,
+      #ffe3a3 52%,
+      #cba85a 65%,
+      #cba85a 100%);
+  background-size: 220% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: wordmark-shine 6s linear infinite;
+}
+
+@keyframes wordmark-shine {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
