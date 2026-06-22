@@ -322,7 +322,7 @@ export default function CollectionsSection() {
               </div>
 
             <div className="mt-4 sm:mt-6">
-                <BehanceGalleryGrid />
+                <BehanceGalleryGrid priorityCount={0} />
               </div>
             </div>
           </section>

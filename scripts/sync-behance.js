@@ -488,15 +488,18 @@ async function main() {
       console.log(`[${index + 1}/${items.length}] Downloading cover image for "${item.title}"...`);
       const success = await downloadFile(item.imageUrl, destPath);
 
-      if (success) {
+      if (success && fs.existsSync(destPath)) {
         successCount += 1;
         localizedItems.push({
           ...item,
           imageUrl: `/images/behance/${filename}`, // Point to local path!
         });
       } else {
-        // Fallback to external url if download failed
-        localizedItems.push(item);
+        const fallbackItem = FALLBACK_ITEMS[index % FALLBACK_ITEMS.length];
+        localizedItems.push({
+          ...item,
+          imageUrl: fallbackItem.imageUrl,
+        });
       }
     }
 

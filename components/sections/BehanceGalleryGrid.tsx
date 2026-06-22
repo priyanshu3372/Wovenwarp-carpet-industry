@@ -6,8 +6,10 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight, RefreshCw } from 'lucide-react';
 import BehanceMark from '@/components/ui/BehanceMark';
 import type { BehanceGalleryResponse, BehanceMediaItem } from '@/lib/behance';
+import cachedGallery from '@/public/data/behance-gallery.json';
 
 const REFRESH_MS = 30 * 60 * 1000;
+const FALLBACK_IMAGE = '/images/lifestyle-living-room-01.webp';
 
 const SKELETONS = Array.from({ length: 8 }, (_, index) => index);
 
@@ -62,8 +64,17 @@ function GalleryState({
   );
 }
 
-function GalleryCard({ item, index }: { item: BehanceMediaItem; index: number }) {
+function GalleryCard({
+  item,
+  index,
+  priority,
+}: {
+  item: BehanceMediaItem;
+  index: number;
+  priority: boolean;
+}) {
   const tall = index % 5 === 1 || index % 5 === 4;
+  const [imageSrc, setImageSrc] = useState(item.imageUrl || FALLBACK_IMAGE);
 
   return (
     <motion.a
@@ -79,12 +90,13 @@ function GalleryCard({ item, index }: { item: BehanceMediaItem; index: number })
         }`}
     >
       <Image
-        src={item.imageUrl}
+        src={imageSrc}
         alt={item.alt}
         fill
-        priority={index < 4}
+        priority={priority}
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         className="absolute inset-0 h-full w-full object-cover transition duration-1000 group-hover:scale-[1.045]"
+        onError={() => setImageSrc(FALLBACK_IMAGE)}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink-950/90 via-ink-950/12 to-transparent transition duration-700 group-hover:from-ink-950/82" />
       <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
@@ -104,9 +116,15 @@ function GalleryCard({ item, index }: { item: BehanceMediaItem; index: number })
   );
 }
 
-export default function BehanceGalleryGrid() {
-  const [gallery, setGallery] = useState<BehanceGalleryResponse | null>(null);
-  const [loading, setLoading] = useState(true);
+type BehanceGalleryGridProps = {
+  priorityCount?: number;
+};
+
+const initialGallery = cachedGallery as BehanceGalleryResponse;
+
+export default function BehanceGalleryGrid({ priorityCount = 1 }: BehanceGalleryGridProps) {
+  const [gallery, setGallery] = useState<BehanceGalleryResponse | null>(initialGallery);
+  const [loading, setLoading] = useState(!initialGallery);
   const [error, setError] = useState<string | null>(null);
 
   const loadGallery = async (silent = false) => {
@@ -135,7 +153,7 @@ export default function BehanceGalleryGrid() {
   };
 
   useEffect(() => {
-    loadGallery();
+    if (!gallery) loadGallery();
     const intervalId = window.setInterval(() => loadGallery(true), REFRESH_MS);
     return () => window.clearInterval(intervalId);
   }, []);
@@ -174,7 +192,12 @@ export default function BehanceGalleryGrid() {
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4 grid-flow-row-dense auto-rows-[minmax(260px,auto)]">
         {items.map((item, index) => (
-          <GalleryCard key={item.id} item={item} index={index} />
+          <GalleryCard
+            key={item.id}
+            item={item}
+            index={index}
+            priority={index < priorityCount}
+          />
         ))}
       </div>
 
